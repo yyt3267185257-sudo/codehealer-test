@@ -11,7 +11,8 @@ def multiply(a: float, b: float) -> float:
 
 def safe_divide(a: float, b: float) -> float:
     """执行除法，除数为零时返回 0.0。"""
-    # 故意保留的 Bug：没有处理除数为零
+    if b == 0:
+        return 0.0
     return a / b
 
 def average(numbers: Iterable[float]) -> float:
