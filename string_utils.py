@@ -1,3 +1,7 @@
 def reverse_string(s: str) -> str:
-    # 这里故意写错，本来应该是 s[::-1]
-    return s[::1]
+    return s[::-1]
+
+def safe_divide(a: float, b: float) -> float:
+    if b == 0:
+        return 0.0
+    return a / b
